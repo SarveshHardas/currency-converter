@@ -1,0 +1,22 @@
+export const currencies = [
+    { id: "USD", title: "USD" },
+    { id: "EUR", title: "EUR" },
+    { id: "GBP", title: "GBP" },
+    { id: "JPY", title: "JPY" },
+    { id: "INR", title: "INR" },
+    { id: "CAD", title: "CAD" },
+    { id: "AUD", title: "AUD" },
+    { id: "CHF", title: "CHF" },
+    { id: "CNY", title: "CNY" },
+    { id: "SEK", title: "SEK" },
+    { id: "NZD", title: "NZD" },
+    { id: "MXN", title: "MXN" },
+    { id: "SGD", title: "SGD" },
+    { id: "HKD", title: "HKD" },
+    { id: "NOK", title: "NOK" },
+    { id: "ZAR", title: "ZAR" },
+    { id: "BRL", title: "BRL" },
+    { id: "RUB", title: "RUB" },
+    { id: "KRW", title: "KRW" },
+    { id: "TRY", title: "TRY" }
+];

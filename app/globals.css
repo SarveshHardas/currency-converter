@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,6 +18,69 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .main{
+    @apply bg-[#e5e5e5] min-h-screen w-full flex justify-center items-center;
+  }
+  .container{
+    @apply bg-white text-black border-1 p-10 rounded-lg shadow overflow-hidden;
+  }
+  .navbar{
+    @apply flex justify-between items-center;
+  }
+  .button{
+    @apply bg-[#e5e5e5] px-3 py-2 rounded-lg border-1 flex justify-center items-center gap-2 text-black font-bold hover:cursor-pointer hover:bg-black hover:text-white transition duration-150 ease-in-out;
+  }
+  .heading{
+    @apply text-black font-bold text-2xl text-center;
+  }
+  .main-container{
+    @apply items-center my-5 p-2 border-gray-300 border-2 rounded-lg;
+  }
+  .amount-holder{
+    @apply border-gray-300 border-2 rounded-lg px-5 text-black;
+  }
+  .curr-selector{
+    @apply border-gray-300 border-2 rounded-lg p-2;
+  }
+  .convert-button{
+    @apply bg-blue-600 text-white px-20 py-2 rounded-lg;
+  }
+  .bottom-text{
+    @apply text-gray-500 text-center text-2xl
+  }
+  .main-dark{
+    @apply bg-black text-white min-h-screen w-full flex justify-center items-center;
+  }
+  .container-dark{
+    @apply bg-[#2c2c2c] text-white border-1 p-10 rounded-lg shadow overflow-hidden;
+  }
+  .navbar-dark{
+    @apply flex justify-between items-center;
+  }
+  .button-dark{
+    @apply bg-[#2c2c2c] px-3 py-2 rounded-lg border-1 flex justify-center items-center gap-2 text-white font-bold hover:cursor-pointer hover:bg-white hover:text-black transition duration-150 ease-in-out;
+  }
+  .heading-dark{
+    @apply text-white font-bold text-2xl text-center;
+  }
+  .main-container-dark{
+    @apply items-center my-5 p-2 border-gray-300 border-2 rounded-lg;
+  }
+  .amount-holder-dark{
+    @apply border-gray-300 border-2 rounded-lg px-5 text-white;
+  }
+  .curr-selector-dark{
+    @apply border-gray-300 border-2 rounded-lg p-2;
+  }
+  .convert-button-dark{
+    @apply bg-blue-600 text-white px-20 py-2 rounded-lg;
+  }
+  .bottom-text-dark{
+    @apply text-gray-500 text-center text-2xl
   }
 }
 
